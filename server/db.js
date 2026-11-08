@@ -3,11 +3,15 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(
-      "mongodb://127.0.0.1:27017/whatsapp_clone"
-    );
+    const mongoURI = process.env.MONGO_URI;
 
-    console.log("MongoDB Connected Successfully");
+    if (!mongoURI) {
+      throw new Error("MONGO_URI is missing from environment variables");
+    }
+
+    await mongoose.connect(mongoURI);
+
+    console.log("MongoDB Atlas Connected Successfully");
   } catch (error) {
     console.error("MongoDB Connection Error:", error.message);
     process.exit(1);
@@ -15,3 +19,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
