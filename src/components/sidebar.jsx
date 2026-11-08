@@ -9,7 +9,7 @@ import {
   X,
 } from "lucide-react";
 
-import ChatList from "./Chatlist";
+import ChatList from "./chatlist.jsx";
 
 function Sidebar({
   contacts,
@@ -269,4 +269,4 @@ function Sidebar({
   );
 }
 
-export default sidebar;
+export default Sidebar;

@@ -2,8 +2,8 @@
 import { useEffect, useRef } from "react";
 
 import ChatHeader from "./Chatheader";
-import Message from "./Message";
-import MessageInput from "./Messageinput";
+import Message from "./message.jsx";
+import MessageInput from "./messageinput.jsx";
 
 function ChatWindow({
   selectedContact,
