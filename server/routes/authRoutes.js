@@ -51,16 +51,16 @@ console.log("DATABASE:", User.db.name);
       { expiresIn: "7d" }
     );
 
-    res.status(201).json({
-      message: "Registration successful",
-      token,
-      user: {
-        id: newUser._id,
-        name: newUser.name,
-        email: newUser.email,
-          profilePicture: user.profilePicture || "",
-      },
-    });
+   res.status(201).json({
+  message: "Registration successful",
+  token,
+  user: {
+    id: newUser._id,
+    name: newUser.name,
+    email: newUser.email,
+    profilePicture: newUser.profilePicture || "",
+  },
+});
 
   } catch (error) {
     console.error("Registration error:", error);
