@@ -1,5 +1,5 @@
 
-import ChatItem from "./Chatitem";
+import ChatItem from "./chatitem.jsx";
 
 function ChatList({ contacts, selectedId, onSelectContact }) {
   return (

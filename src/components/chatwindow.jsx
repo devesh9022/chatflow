@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from "react";
 
-import ChatHeader from "./Chatheader";
+import ChatHeader from "./chatheader";
 import Message from "./message.jsx";
 import MessageInput from "./messageinput.jsx";
 
