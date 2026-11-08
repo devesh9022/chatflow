@@ -82,13 +82,13 @@ function Sidebar({
             onClick={() => fileInputRef.current?.click()}
             title="Change profile picture"
           >
-            {currentUser?.profilePicture ? (
-              <img
-                src={`http://localhost:5000${currentUser.profilePicture}`}
-                alt="Profile"
-                className="avatar my-avatar"
-              />
-            ) : (
+           {currentUser?.profilePicture ? (
+  <img
+    src={`https://chatflow-2-xs0g.onrender.com${currentUser.profilePicture}`}
+    alt="Profile"
+    className="avatar my-avatar"
+  />
+) : (
               <div className="avatar my-avatar">
                 {currentUser?.name?.charAt(0).toUpperCase() || "U"}
               </div>

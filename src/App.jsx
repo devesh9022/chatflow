@@ -8,7 +8,7 @@ import socket from "./socket";
 
 import "./App.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://chatflow-2-xs0g.onrender.com";
 
 function App() {
   // ======================================
