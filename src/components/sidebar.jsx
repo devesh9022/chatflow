@@ -269,4 +269,4 @@ function Sidebar({
   );
 }
 
-export default Sidebar;
+export default sidebar;

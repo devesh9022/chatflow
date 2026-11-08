@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 
 import Auth from "./components/Auth.jsx";
-import Sidebar from "./components/Sidebar";
-import ChatWindow from "./components/Chatwindow";
+import Sidebar from "./components/sidebar.jsx";
+import ChatWindow from "./components/chatwindow.jsx";
 import socket from "./socket";
 
 import "./App.css";
